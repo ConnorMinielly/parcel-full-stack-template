@@ -1,0 +1,37 @@
+{
+  "name": "parcel-full-stack-template",
+  "version": "1.0.0",
+  "main": "./server/index.js",
+  "scripts": {
+    "start": "npm run build && node ./server/index.js",
+    "build": "parcel build ./client/public/index.html",
+    "client": "node devServer.js",
+    "server": "nodemon ./server/index.js",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\""
+  },
+  "author": "Connor Minielly",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "http-proxy-middleware": "^0.18.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^3.5.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "nodemon": "^1.17.3",
+    "parcel-bundler": "^1.9.7"
+  }
+}
